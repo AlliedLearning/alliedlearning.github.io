@@ -1,0 +1,29 @@
+---
+layout: default
+background-color: rgb(6, 23, 37);
+color: rgb(119, 119, 119);
+---
+
+ <script async src="{{site.baseurl}}/assets/js/theme.js"></script>
+
+<section>
+    <div class="section-title">
+        <h2><span>{{ page.title }}</span></h2>
+    </div>
+    
+    <div class="article-post">
+    {{content}}
+    </div>
+     {% include adsense.html %}
+    {% if page.comments == true %}
+    
+    <div id="comments" class="row mb-5">
+        <div class="col-md-8">              
+            {% include disqus.html %}                
+        </div>
+    </div>
+    
+    {% endif %}
+  {% include adsense.html %}
+    
+</section>
