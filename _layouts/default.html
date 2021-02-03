@@ -178,21 +178,7 @@ cursor:pointer
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
 		 
-		 {% if page.url == "https://starksources.github.io/computer-science" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="https://starksources.github.io/computer-science">CS</a>
-                </li>
-		    
-		    {% if page.url == "https://starksources.github.io/data-science/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="https://starksources.github.io/data-science/">DataScience</a>
-                </li>
+		 
 		    
 		<!-- <li class="nav-item active">
                 <a href="https://starksources.github.io/computer-science/"> CS</a>
@@ -208,7 +194,7 @@ cursor:pointer
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/categories.html">Categories</a>
+                <a class="nav-link" href="{{ site.baseurl }}/categories.html">Subjects</a>
                 </li>
                 
                 {% if page.url == "/tags.html" %}
@@ -216,7 +202,7 @@ cursor:pointer
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/tags.html">Tags</a>
+                <a class="nav-link" href="{{ site.baseurl }}/tags.html">Topics</a>
                 </li>
 		    
 		{% if page.url == "/livestats.html" %}
